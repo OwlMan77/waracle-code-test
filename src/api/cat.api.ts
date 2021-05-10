@@ -1,8 +1,6 @@
 import ky from 'ky';
 import.meta.env.VITE_CAT_API_KEY
 
-// Handled by a session id or uuid from db usually. Using static to save time
-
 const api = ky.create({prefixUrl: 'https://api.thecatapi.com/v1', headers: {'x-api-key': `${import.meta.env.VITE_CAT_API_KEY}`}})
 
 // Part 1 Upload - handled by form
