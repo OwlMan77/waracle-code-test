@@ -17,7 +17,7 @@ Cat App!
 All images and GIFs are public domain.
 
 ## Requirements
- - Latest version of [Node](https://nodejs.org/en/)
+ -  [Node.js 14+](https://nodejs.org/en/) 
 
 ## How to run locally
 Run this command in your terminal:
