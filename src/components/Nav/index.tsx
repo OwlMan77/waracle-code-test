@@ -30,7 +30,6 @@ const Nav = () => {
           <NavLink to="/" className="brand">
             { scroll ?  <img src={HeaderIconLight} className="logo" /> : <img src={HeaderIconDark} className="logo" /> }
           </NavLink>
-
           <div className="right">
             <NavLink className={`Browse link ${path === '' ? 'hidden' : ''}`} to="/">Browse</NavLink>
             <NavLink className={`Upload link ${path === 'upload' ? 'hidden' : ''}`} to="/upload"> <img className="upload-symbol"src={UploadSvG}></img><span className="button-text">Upload</span></NavLink>

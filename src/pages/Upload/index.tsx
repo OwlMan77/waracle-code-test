@@ -16,19 +16,19 @@ function Upload() {
     }
 
     const onFormSubmit = () => {
-        setDisabled(true)
-        const formData = new FormData();
+      setDisabled(true)
+      const formData = new FormData();
 
-        if (selectedFile) {
-            formData.append('file', selectedFile);
-            formData.append('sub_id', CatAPI.subId);
-            CatAPI.upload(formData)
-                .then(() => routeToIndex())
-                .catch(() => {
-                    setError('Unable to upload image')
-                })
+      if (selectedFile) {
+          formData.append('file', selectedFile);
+          formData.append('sub_id', CatAPI.subId);
+          CatAPI.upload(formData)
+              .then(() => routeToIndex())
+              .catch(() => {
+                  setError('Unable to upload image')
+              })
 
-        }
+      }
     }
 
     const onDrop = (file: File) => {
@@ -43,7 +43,6 @@ function Upload() {
           <button disabled={disabled} className="submit" onClick={onFormSubmit}>Submit</button>
           <Error errorMessage={error} />
         </div>
-
       </div>
     )
 }

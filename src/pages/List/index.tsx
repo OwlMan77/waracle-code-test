@@ -63,10 +63,10 @@ function List() {
     }, [])
     return (
       <div className="page List">
-          <div className="grid">
+        <div className="grid">
             {loading ? <Loader />: pageItems}
-          </div>
-          <Error errorMessage={error} />
+        </div>
+        <Error errorMessage={error} />
       </div>
     )
 }
