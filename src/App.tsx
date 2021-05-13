@@ -9,9 +9,8 @@ import Upload from './pages/Upload'
 function App() {
   return (
     <div className="App">
-
       <Router>
-      <Nav />
+        <Nav />
         <Switch>
           <Route path="/upload">
             <Upload />
