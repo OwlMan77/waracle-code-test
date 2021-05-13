@@ -1,0 +1,65 @@
+.Card {
+    width: 320px;
+    justify-self: center;
+    margin: 10px;
+    -webkit-box-shadow: 5px 5px 50px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 5px 5px 50px 0px rgba(0,0,0,0.1);
+    box-shadow: 5px 5px 50px 0px rgba(0,0,0,0.1);
+    border-radius: 5%;
+}
+
+.Card > .cat-image-container {
+    width: 100%;
+    height: 400px;
+}
+
+.Card > .cat-image-container > .cat-image {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.Card > .action-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.Card > .action-buttons > .score-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    width: 45%;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.Card > .action-buttons > .favourite-button,
+.Card > .action-buttons > .score-container  > .score-button
+{
+    user-select: none;
+    cursor: pointer;
+}
+
+.Card > .action-buttons > .score-container > .score {
+    user-select: none;
+}
+
+.Card > .action-buttons > .favourite-button {
+    font-size: 25px;
+}
+
+.Card > hr {
+    border-block-color: rgba(0,0,0,0.1);
+}
+
+.arrow-up,
+.arrow-down {
+    height: 30px;
+    width: 30px;
+}
+
+.arrow-down {
+    transform: rotate(180deg) !important;
+}
