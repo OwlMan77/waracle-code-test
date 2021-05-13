@@ -1,0 +1,41 @@
+.Upload {
+    display: flex;
+    justify-content: center;
+    height: calc(100vh - 70px);
+    align-items: flex-start;
+}
+
+.thumb {
+    height: 200px;
+    margin: 0 10px;
+}
+
+.thumb > .thumbnail {
+    width: 100px;
+    object-fit: contain;
+}
+
+.upload-container{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0 15px;
+}
+
+.submit {
+    color: var(--white);
+    background-color: var(--confirmation);
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.submit:disabled {
+    color: var(--white);
+    background-color: var(--white-accent);
+}
+
+
