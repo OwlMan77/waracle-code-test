@@ -1,0 +1,19 @@
+.List > .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+@media screen and (max-width: 800px) {
+    .List > .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .List > .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
