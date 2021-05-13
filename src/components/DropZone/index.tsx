@@ -69,16 +69,19 @@ function Dropzone(props: PropsWithChildren<DropzoneProps>) {
     isDragAccept
   ]);
 
-  const thumbs =
-  file ? <>
-  <h3>Preview</h3>
+  let thumbs = null;
+
+  if (file) {
+   thumbs = <>
+    <h3>Preview</h3>
     <div className="thumb" key={file?.name}>
       <img
         className="thumbnail"
         src={file?.preview}
         alt={file?.name}
       />
-    </div> </>: null
+    </div> </>
+  }
 
   useEffect(() => () => {
       if (file) {
