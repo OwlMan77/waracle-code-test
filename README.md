@@ -15,3 +15,11 @@ Cat App!
 
 
 All images and GIFs are public domain.
+
+## Requirements
+ - Latest version of [Node](https://nodejs.org/en/)
+
+## How to run locally
+Run this command in your terminal:
+
+```npm i && npm start```
