@@ -1,0 +1,118 @@
+@-o-keyframes fadeToBlack {
+    0%   { background-color: transparent; }
+    100%  { background-color: var(--primary); }
+}
+
+@keyframes fadeToBlack {
+    0%   { background-color: transparent; }
+    100%  { background-color: var(--primary); }
+}   
+
+.Nav {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.bg-transparent {
+    background-color: transparent;
+    color: var(--primary);
+}
+
+.bg-black {
+    -o-animation: fadeToBlack 0.1s ease-in; 
+    animation: fadeToBlack 0.1s ease-in; 
+    animation-iteration-count: 1;
+    background-color: var(--primary);
+}
+
+.bg-transparent > .container > .right > .link {
+    color: var(--primary);
+}
+
+.bg-transparent > .container > .right > .link:hover {
+    background-color: var(--white-accent);
+}
+
+.bg-black > .container > .right > .link {
+    color: var(--white);
+}
+
+.Nav > .container {    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    height: 70px;
+}
+
+.Nav > .container > .right {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-self: center;
+    width: 20%
+}
+
+.Nav > .container > .right > .link {
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+    margin: 0 5px;
+    font-size: 20px;
+}
+
+.Nav > .container > .right > .Upload {
+    background-color: var(--confirmation);
+    color: var(--white);
+    border-radius: 10px !important;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 30px;
+}
+
+.Nav > .container > .right > .Browse {
+    background-color: var(--white);
+    color: var(--primary);
+    border-radius: 10px !important;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 30px;
+}
+
+.Nav > .container > .right > .Browse:hover {
+    background-color: var(--white-accent);
+    color: var(--white);
+}
+
+
+.Nav > .container > .right > .Upload > .upload-symbol {
+    height: 23px;
+    margin: 0 8px;
+}
+
+
+.Nav > .container > .brand  {
+    margin: 5px 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.Nav > .container > .brand > .logo {
+    height: 40px;
+    margin: 0 auto;
+}
+
+.hidden {
+    display: none !important;
+}
+
+@media screen and (max-width: 500px) {
+    .Nav > .container > .right {
+        width: 44%
+    }
+}
