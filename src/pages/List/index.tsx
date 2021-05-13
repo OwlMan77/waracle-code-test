@@ -11,7 +11,7 @@ const createListItems = (response: CatImageResponseItem[], preload=true): JSX.El
     response.forEach((data, i) => {
 
         if (preload) {
-            // preloads images into cache plesae use paginations for 50+ images
+            // preloads images into cache please use paginations for 50+ images
             const img = new Image();
             img.src = data.url; 
         }
@@ -39,7 +39,7 @@ function List() {
             .then(async (data) => {
                 const votes = await catAPI.getVotes(catAPI.subId)
 
-                return data.map((item: any) => {
+                return data.map((item: CatImageResponseItem) => {
                     const value = votes.find((vote) => {
                         vote.image_id === item.id
                     })?.value;
@@ -61,6 +61,7 @@ function List() {
                 setLoader(false)
             })
     }, [])
+
     return (
       <div className="page List">
         <div className="grid">
